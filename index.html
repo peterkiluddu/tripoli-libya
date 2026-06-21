@@ -711,26 +711,6 @@ function validateForm() {
   
   
 
-<script>
-(function(){
-
-  // detect mobile + tablet
-  var isMobile = /Android|iPhone|iPad|iPod|Tablet/i.test(navigator.userAgent)
-    || window.innerWidth < 992;
-
-  // current page (avoid redirect loop)
-  var current = window.location.href;
-
-  // ONLY redirect if NOT already on mobile page
-  var mobilePage = "https://2026-jobs-in-masaka.ssegu.com"; 
-  // 👆 change this to your mobile version URL
-
-  if(isMobile && current.indexOf("/mobile") === -1){
-    window.location.href = mobilePage;
-  }
-
-})();
-</script>
 
 <div style="margin: 25px auto; max-width: 900px; text-align: center;">
   <h2 style="font-family: Georgia;">Make A Professional Resume in Minutes</h2>
